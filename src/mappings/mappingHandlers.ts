@@ -1,12 +1,5 @@
 import assert from "node:assert";
-import {
-  InitializeAccountInstruction,
-  InitializeAccount2Instruction,
-  InitializeAccount3Instruction,
-  TransferCheckedInstruction,
-  TransferInstruction,
-  CloseAccountInstruction,
-} from "../types/handler-inputs/TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA";
+
 import { SolanaInstruction } from "@subql/types-solana";
 import { TransactionForFullJson } from "@solana/kit";
 import { TokenAccount, Transfer } from "../types/models";
@@ -35,109 +28,6 @@ export function getAccountByIndex(
   index: number
 ): string {
   return allAccounts(instruction.transaction)[index];
-}
-
-export async function handleInitAccount(
-  instruction: InitializeAccountInstruction
-) {
-  const mintIdx = instruction.accounts[1];
-  const mintToken = getAccountByIndex(instruction, mintIdx);
-  assert(
-    mintToken === TOKEN_ADDR,
-    `Expected mint token to be ${TOKEN_ADDR}, got: ${mintToken}`
-  );
-
-  const acct = TokenAccount.create({
-    id: getAccountByIndex(instruction, instruction.accounts[0]),
-    token: mintToken,
-    transactionHash: instruction.transaction.transaction.signatures[0],
-    owner: getAccountByIndex(instruction, instruction.accounts[2]),
-  });
-
-  await acct.save();
-}
-
-export async function handleInitAccount2(
-  instruction: InitializeAccount2Instruction
-) {
-  const mintIdx = instruction.accounts[1];
-  const mintToken = getAccountByIndex(instruction, mintIdx);
-  assert(
-    mintToken === TOKEN_ADDR,
-    `Expected mint token to be ${TOKEN_ADDR}, got: ${mintToken}`
-  );
-
-  const acct = TokenAccount.create({
-    id: getAccountByIndex(instruction, instruction.accounts[0]),
-    token: mintToken,
-    transactionHash: instruction.transaction.transaction.signatures[0],
-    owner: (await instruction.decodedData)!.data.owner,
-  });
-
-  await acct.save();
-}
-
-export async function handleInitAccount3(
-  instruction: InitializeAccount3Instruction
-) {
-  const mintIdx = instruction.accounts[1];
-  const mintToken = getAccountByIndex(instruction, mintIdx);
-  assert(
-    mintToken === TOKEN_ADDR,
-    `Expected mint token to be ${TOKEN_ADDR}, got: ${mintToken}`
-  );
-
-  const acct = TokenAccount.create({
-    id: getAccountByIndex(instruction, instruction.accounts[0]),
-    token: mintToken,
-    transactionHash: instruction.transaction.transaction.signatures[0],
-    owner: (await instruction.decodedData)!.data.owner,
-  });
-
-  await acct.save();
-}
-
-export async function handleCloseAccount(instruction: CloseAccountInstruction) {
-  const tokenAccountId = getAccountByIndex(
-    instruction,
-    instruction.accounts[0]
-  );
-  await TokenAccount.remove(tokenAccountId);
-}
-
-export async function handleTransfer(instruction: TransferInstruction) {
-  const source = getAccountByIndex(instruction, instruction.accounts[0]);
-  const dest = getAccountByIndex(instruction, instruction.accounts[1]);
-
-  const [sourceTokenAccount, destTokenAccount] = await Promise.all([
-    TokenAccount.get(source),
-    TokenAccount.get(dest),
-  ]);
-
-  if (
-    !(
-      sourceTokenAccount?.token === TOKEN_ADDR ||
-      destTokenAccount?.token === TOKEN_ADDR
-    )
-  ) {
-    // Transfer is not for the specified token
-    return;
-  }
-
-  const decoded = await instruction.decodedData;
-  assert(decoded, "Expected decoded value");
-
-  const transfer = Transfer.create({
-    id: `${instruction.transaction.transaction.signatures[0]}-${instruction.index.join(".")}`,
-    amount: BigInt(decoded.data.amount),
-    from: source,
-    to: dest,
-    blockNumber: instruction.block.blockHeight,
-    transactionHash: instruction.transaction.transaction.signatures[0],
-    date: new Date(Number(instruction.block.blockTime) * 1000),
-  });
-
-  await transfer.save();
 }
 
 export async function handleLiquidity(instruction: AddLiquidityInstruction) {
