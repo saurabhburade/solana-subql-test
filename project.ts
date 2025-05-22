@@ -37,7 +37,7 @@ const project: SolanaProject = {
      * These settings can be found in your docker-compose.yaml, they will slow indexing but prevent your project being rate limited
      */
     endpoint: [
-      "wss://lb.drpc.org/ogws?network=solana&dkey=At2bhbEKA0nUjDj8Pdkc2m37qqBIxBsR768wIlZWwHzR",
+      "https://lb.drpc.org/ogrpc?network=solana&dkey=At2bhbEKA0nUjDj8Pdkc2m37qqBIxBsR768wIlZWwHzR",
     ],
   },
   dataSources: [
