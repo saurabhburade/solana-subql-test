@@ -37,7 +37,7 @@ services:
       - --db-schema=app
       - --workers=4
       - --batch-size=1
-      - --unfinalized-blocks=true
+      - --unfinalized-blocks=false
       - --unsafe
 
     healthcheck:
