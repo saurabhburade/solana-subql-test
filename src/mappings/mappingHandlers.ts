@@ -31,8 +31,7 @@ export function getAccountByIndex(
 }
 
 export async function handleLiquidity(instruction: AddLiquidityInstruction) {
-  logger.info("handleLiquidity : TRACKING DATA : {} programAddress : {}", [
-    instruction.data.toString(),
+  logger.info("handleLiquidity : programAddress : {}", [
     instruction.programAddress.toString(),
   ]);
 }
