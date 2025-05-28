@@ -18,3 +18,14 @@ type TokenAccount @entity {
   token: String!
   owner: String!
 }
+type AddLiquidity @entity {
+  id: ID!
+  data: String!
+  program: String!
+  accounts: String!
+  blockNumber: BigInt!
+  transactionHash: String!
+}
+
+
+
