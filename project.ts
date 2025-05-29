@@ -14,7 +14,7 @@ const project: SolanaProject = {
   runner: {
     node: {
       name: "@subql/node-solana",
-      version: ">=6.0.2",
+      version: ">=6.0.3",
     },
     query: {
       name: "@subql/query",
@@ -54,41 +54,14 @@ const project: SolanaProject = {
             kind: SolanaHandlerKind.Instruction,
             handler: "handleLiquidity",
             filter: {
-              discriminator: "addLiquidityOneSide",
+              discriminator: "AddLiquidityOneSide",
               programId: "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo",
             },
           },
-
-          /* The below filters greatly decrease performance because theres no way to filter by token */
-          // {
-          //   kind: SolanaHandlerKind.Instruction,
-          //   handler: "handleCloseAccount",
-          //   filter: {
-          //     programId: "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
-          //     discriminator: "closeAccount",
-          //   },
-          // },
-          // {
-          //   kind: SolanaHandlerKind.Instruction,
-          //   handler: "handleTransfer",
-          //   filter: {
-          //     programId: "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
-          //     discriminator: "transfer",
-          //   },
-          // },
-          // {
-          //   kind: SolanaHandlerKind.Instruction,
-          //   handler: "handleRecoverNestedAssociatedToken",
-          //   filter: {
-          //     programId: "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
-          //     discriminator: "recoverNestedAssociatedToken",
-          //   },
-          // },
         ],
       },
     },
   ],
-  repository: "https://github.com/subquery/solana-subql-starter",
 };
 
 // Must set default to the project instance
