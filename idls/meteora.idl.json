@@ -13,6 +13,7 @@
             {
                 "kind": "accountNode",
                 "name": "binArrayBitmapExtension",
+                "size": 1576,
                 "docs": [],
                 "data": {
                     "kind": "structTypeNode",
@@ -108,6 +109,7 @@
             {
                 "kind": "accountNode",
                 "name": "binArray",
+                "size": 10136,
                 "docs": [
                     "An account to contain a range of bin. For example: Bin 100 <-> 200.",
                     "For example:",
@@ -162,15 +164,10 @@
                             "name": "padding",
                             "docs": [],
                             "type": {
-                                "kind": "arrayTypeNode",
-                                "item": {
-                                    "kind": "numberTypeNode",
-                                    "format": "u8",
-                                    "endian": "le"
-                                },
-                                "count": {
-                                    "kind": "fixedCountNode",
-                                    "value": 7
+                                "kind": "fixedSizeTypeNode",
+                                "size": 7,
+                                "type": {
+                                    "kind": "bytesTypeNode"
                                 }
                             }
                         },
@@ -211,6 +208,7 @@
             {
                 "kind": "accountNode",
                 "name": "claimFeeOperator",
+                "size": 168,
                 "docs": [
                     "Parameter that set by the protocol"
                 ],
@@ -252,15 +250,10 @@
                                 "Reserve"
                             ],
                             "type": {
-                                "kind": "arrayTypeNode",
-                                "item": {
-                                    "kind": "numberTypeNode",
-                                    "format": "u8",
-                                    "endian": "le"
-                                },
-                                "count": {
-                                    "kind": "fixedCountNode",
-                                    "value": 128
+                                "kind": "fixedSizeTypeNode",
+                                "size": 128,
+                                "type": {
+                                    "kind": "bytesTypeNode"
                                 }
                             }
                         }
@@ -277,6 +270,7 @@
             {
                 "kind": "accountNode",
                 "name": "lbPair",
+                "size": 904,
                 "docs": [],
                 "data": {
                     "kind": "structTypeNode",
@@ -322,15 +316,10 @@
                             "name": "bumpSeed",
                             "docs": [],
                             "type": {
-                                "kind": "arrayTypeNode",
-                                "item": {
-                                    "kind": "numberTypeNode",
-                                    "format": "u8",
-                                    "endian": "le"
-                                },
-                                "count": {
-                                    "kind": "fixedCountNode",
-                                    "value": 1
+                                "kind": "fixedSizeTypeNode",
+                                "size": 1,
+                                "type": {
+                                    "kind": "bytesTypeNode"
                                 }
                             }
                         },
@@ -341,15 +330,10 @@
                                 "Bin step signer seed"
                             ],
                             "type": {
-                                "kind": "arrayTypeNode",
-                                "item": {
-                                    "kind": "numberTypeNode",
-                                    "format": "u8",
-                                    "endian": "le"
-                                },
-                                "count": {
-                                    "kind": "fixedCountNode",
-                                    "value": 2
+                                "kind": "fixedSizeTypeNode",
+                                "size": 2,
+                                "type": {
+                                    "kind": "bytesTypeNode"
                                 }
                             }
                         },
@@ -420,15 +404,10 @@
                                 "Base factor seed"
                             ],
                             "type": {
-                                "kind": "arrayTypeNode",
-                                "item": {
-                                    "kind": "numberTypeNode",
-                                    "format": "u8",
-                                    "endian": "le"
-                                },
-                                "count": {
-                                    "kind": "fixedCountNode",
-                                    "value": 2
+                                "kind": "fixedSizeTypeNode",
+                                "size": 2,
+                                "type": {
+                                    "kind": "bytesTypeNode"
                                 }
                             }
                         },
@@ -514,15 +493,10 @@
                                 "_padding_1, previous Fee owner, BE CAREFUL FOR TOMBSTONE WHEN REUSE !!"
                             ],
                             "type": {
-                                "kind": "arrayTypeNode",
-                                "item": {
-                                    "kind": "numberTypeNode",
-                                    "format": "u8",
-                                    "endian": "le"
-                                },
-                                "count": {
-                                    "kind": "fixedCountNode",
-                                    "value": 32
+                                "kind": "fixedSizeTypeNode",
+                                "size": 32,
+                                "type": {
+                                    "kind": "bytesTypeNode"
                                 }
                             }
                         },
@@ -592,15 +566,10 @@
                                 "_padding_2, previous whitelisted_wallet, BE CAREFUL FOR TOMBSTONE WHEN REUSE !!"
                             ],
                             "type": {
-                                "kind": "arrayTypeNode",
-                                "item": {
-                                    "kind": "numberTypeNode",
-                                    "format": "u8",
-                                    "endian": "le"
-                                },
-                                "count": {
-                                    "kind": "fixedCountNode",
-                                    "value": 32
+                                "kind": "fixedSizeTypeNode",
+                                "size": 32,
+                                "type": {
+                                    "kind": "bytesTypeNode"
                                 }
                             }
                         },
@@ -655,15 +624,10 @@
                                 "_padding 3 is reclaimed free space from swap_cap_deactivate_point and swap_cap_amount before, BE CAREFUL FOR TOMBSTONE WHEN REUSE !!"
                             ],
                             "type": {
-                                "kind": "arrayTypeNode",
-                                "item": {
-                                    "kind": "numberTypeNode",
-                                    "format": "u8",
-                                    "endian": "le"
-                                },
-                                "count": {
-                                    "kind": "fixedCountNode",
-                                    "value": 8
+                                "kind": "fixedSizeTypeNode",
+                                "size": 8,
+                                "type": {
+                                    "kind": "bytesTypeNode"
                                 }
                             }
                         },
@@ -720,15 +684,10 @@
                                 "Reserved space for future use"
                             ],
                             "type": {
-                                "kind": "arrayTypeNode",
-                                "item": {
-                                    "kind": "numberTypeNode",
-                                    "format": "u8",
-                                    "endian": "le"
-                                },
-                                "count": {
-                                    "kind": "fixedCountNode",
-                                    "value": 22
+                                "kind": "fixedSizeTypeNode",
+                                "size": 22,
+                                "type": {
+                                    "kind": "bytesTypeNode"
                                 }
                             }
                         }
@@ -745,6 +704,7 @@
             {
                 "kind": "accountNode",
                 "name": "oracle",
+                "size": 32,
                 "docs": [],
                 "data": {
                     "kind": "structTypeNode",
@@ -816,6 +776,7 @@
             {
                 "kind": "accountNode",
                 "name": "position",
+                "size": 7560,
                 "docs": [],
                 "data": {
                     "kind": "structTypeNode",
@@ -999,15 +960,10 @@
                                 "Reserved space for future use"
                             ],
                             "type": {
-                                "kind": "arrayTypeNode",
-                                "item": {
-                                    "kind": "numberTypeNode",
-                                    "format": "u8",
-                                    "endian": "le"
-                                },
-                                "count": {
-                                    "kind": "fixedCountNode",
-                                    "value": 160
+                                "kind": "fixedSizeTypeNode",
+                                "size": 160,
+                                "type": {
+                                    "kind": "bytesTypeNode"
                                 }
                             }
                         }
@@ -1024,6 +980,7 @@
             {
                 "kind": "accountNode",
                 "name": "positionV2",
+                "size": 8120,
                 "docs": [],
                 "data": {
                     "kind": "structTypeNode",
@@ -1251,15 +1208,10 @@
                                 "Reserved space for future use"
                             ],
                             "type": {
-                                "kind": "arrayTypeNode",
-                                "item": {
-                                    "kind": "numberTypeNode",
-                                    "format": "u8",
-                                    "endian": "le"
-                                },
-                                "count": {
-                                    "kind": "fixedCountNode",
-                                    "value": 87
+                                "kind": "fixedSizeTypeNode",
+                                "size": 87,
+                                "type": {
+                                    "kind": "bytesTypeNode"
                                 }
                             }
                         }
@@ -1276,6 +1228,7 @@
             {
                 "kind": "accountNode",
                 "name": "presetParameter2",
+                "size": 192,
                 "docs": [],
                 "data": {
                     "kind": "structTypeNode",
@@ -1462,6 +1415,7 @@
             {
                 "kind": "accountNode",
                 "name": "presetParameter",
+                "size": 36,
                 "docs": [],
                 "data": {
                     "kind": "structTypeNode",
@@ -1617,6 +1571,7 @@
             {
                 "kind": "accountNode",
                 "name": "tokenBadge",
+                "size": 168,
                 "docs": [
                     "Parameter that set by the protocol"
                 ],
@@ -1658,15 +1613,10 @@
                                 "Reserve"
                             ],
                             "type": {
-                                "kind": "arrayTypeNode",
-                                "item": {
-                                    "kind": "numberTypeNode",
-                                    "format": "u8",
-                                    "endian": "le"
-                                },
-                                "count": {
-                                    "kind": "fixedCountNode",
-                                    "value": 128
+                                "kind": "fixedSizeTypeNode",
+                                "size": 128,
+                                "type": {
+                                    "kind": "bytesTypeNode"
                                 }
                             }
                         }
@@ -1766,7 +1716,12 @@
                         "isWritable": false,
                         "isSigner": false,
                         "isOptional": false,
-                        "docs": []
+                        "docs": [],
+                        "defaultValue": {
+                            "kind": "publicKeyValueNode",
+                            "publicKey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                            "identifier": "splToken"
+                        }
                     },
                     {
                         "kind": "instructionAccountNode",
@@ -1774,7 +1729,12 @@
                         "isWritable": false,
                         "isSigner": false,
                         "isOptional": false,
-                        "docs": []
+                        "docs": [],
+                        "defaultValue": {
+                            "kind": "publicKeyValueNode",
+                            "publicKey": "11111111111111111111111111111111",
+                            "identifier": "splSystem"
+                        }
                     },
                     {
                         "kind": "instructionAccountNode",
@@ -1782,7 +1742,11 @@
                         "isWritable": false,
                         "isSigner": false,
                         "isOptional": false,
-                        "docs": []
+                        "docs": [],
+                        "defaultValue": {
+                            "kind": "publicKeyValueNode",
+                            "publicKey": "SysvarRent111111111111111111111111111111111"
+                        }
                     },
                     {
                         "kind": "instructionAccountNode",
@@ -1965,7 +1929,12 @@
                         "isWritable": false,
                         "isSigner": false,
                         "isOptional": false,
-                        "docs": []
+                        "docs": [],
+                        "defaultValue": {
+                            "kind": "publicKeyValueNode",
+                            "publicKey": "11111111111111111111111111111111",
+                            "identifier": "splSystem"
+                        }
                     },
                     {
                         "kind": "instructionAccountNode",
@@ -1973,7 +1942,11 @@
                         "isWritable": false,
                         "isSigner": false,
                         "isOptional": false,
-                        "docs": []
+                        "docs": [],
+                        "defaultValue": {
+                            "kind": "publicKeyValueNode",
+                            "publicKey": "SysvarRent111111111111111111111111111111111"
+                        }
                     },
                     {
                         "kind": "instructionAccountNode",
@@ -2013,11 +1986,62 @@
                     },
                     {
                         "kind": "instructionArgumentNode",
-                        "name": "ixData",
+                        "name": "activeId",
                         "docs": [],
                         "type": {
-                            "kind": "definedTypeLinkNode",
-                            "name": "initPermissionPairIx"
+                            "kind": "numberTypeNode",
+                            "format": "i32",
+                            "endian": "le"
+                        }
+                    },
+                    {
+                        "kind": "instructionArgumentNode",
+                        "name": "binStep",
+                        "docs": [],
+                        "type": {
+                            "kind": "numberTypeNode",
+                            "format": "u16",
+                            "endian": "le"
+                        }
+                    },
+                    {
+                        "kind": "instructionArgumentNode",
+                        "name": "baseFactor",
+                        "docs": [],
+                        "type": {
+                            "kind": "numberTypeNode",
+                            "format": "u16",
+                            "endian": "le"
+                        }
+                    },
+                    {
+                        "kind": "instructionArgumentNode",
+                        "name": "baseFeePowerFactor",
+                        "docs": [],
+                        "type": {
+                            "kind": "numberTypeNode",
+                            "format": "u8",
+                            "endian": "le"
+                        }
+                    },
+                    {
+                        "kind": "instructionArgumentNode",
+                        "name": "activationType",
+                        "docs": [],
+                        "type": {
+                            "kind": "numberTypeNode",
+                            "format": "u8",
+                            "endian": "le"
+                        }
+                    },
+                    {
+                        "kind": "instructionArgumentNode",
+                        "name": "protocolShare",
+                        "docs": [],
+                        "type": {
+                            "kind": "numberTypeNode",
+                            "format": "u16",
+                            "endian": "le"
                         }
                     }
                 ],
@@ -2113,7 +2137,12 @@
                         "isWritable": false,
                         "isSigner": false,
                         "isOptional": false,
-                        "docs": []
+                        "docs": [],
+                        "defaultValue": {
+                            "kind": "publicKeyValueNode",
+                            "publicKey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                            "identifier": "splToken"
+                        }
                     },
                     {
                         "kind": "instructionAccountNode",
@@ -2121,7 +2150,12 @@
                         "isWritable": false,
                         "isSigner": false,
                         "isOptional": false,
-                        "docs": []
+                        "docs": [],
+                        "defaultValue": {
+                            "kind": "publicKeyValueNode",
+                            "publicKey": "11111111111111111111111111111111",
+                            "identifier": "splSystem"
+                        }
                     },
                     {
                         "kind": "instructionAccountNode",
@@ -2223,7 +2257,12 @@
                         "isWritable": false,
                         "isSigner": false,
                         "isOptional": false,
-                        "docs": []
+                        "docs": [],
+                        "defaultValue": {
+                            "kind": "publicKeyValueNode",
+                            "publicKey": "11111111111111111111111111111111",
+                            "identifier": "splSystem"
+                        }
                     },
                     {
                         "kind": "instructionAccountNode",
@@ -2231,7 +2270,11 @@
                         "isWritable": false,
                         "isSigner": false,
                         "isOptional": false,
-                        "docs": []
+                        "docs": [],
+                        "defaultValue": {
+                            "kind": "publicKeyValueNode",
+                            "publicKey": "SysvarRent111111111111111111111111111111111"
+                        }
                     }
                 ],
                 "arguments": [
@@ -2298,7 +2341,12 @@
                         "isWritable": false,
                         "isSigner": false,
                         "isOptional": false,
-                        "docs": []
+                        "docs": [],
+                        "defaultValue": {
+                            "kind": "publicKeyValueNode",
+                            "publicKey": "11111111111111111111111111111111",
+                            "identifier": "splSystem"
+                        }
                     }
                 ],
                 "arguments": [
@@ -2667,11 +2715,72 @@
                     },
                     {
                         "kind": "instructionArgumentNode",
-                        "name": "liquidityParameter",
-                        "docs": [],
+                        "name": "amountX",
+                        "docs": [
+                            "Amount of X token to deposit"
+                        ],
                         "type": {
-                            "kind": "definedTypeLinkNode",
-                            "name": "liquidityParameterByWeight"
+                            "kind": "numberTypeNode",
+                            "format": "u64",
+                            "endian": "le"
+                        }
+                    },
+                    {
+                        "kind": "instructionArgumentNode",
+                        "name": "amountY",
+                        "docs": [
+                            "Amount of Y token to deposit"
+                        ],
+                        "type": {
+                            "kind": "numberTypeNode",
+                            "format": "u64",
+                            "endian": "le"
+                        }
+                    },
+                    {
+                        "kind": "instructionArgumentNode",
+                        "name": "activeId",
+                        "docs": [
+                            "Active bin that integrator observe off-chain"
+                        ],
+                        "type": {
+                            "kind": "numberTypeNode",
+                            "format": "i32",
+                            "endian": "le"
+                        }
+                    },
+                    {
+                        "kind": "instructionArgumentNode",
+                        "name": "maxActiveBinSlippage",
+                        "docs": [
+                            "max active bin slippage allowed"
+                        ],
+                        "type": {
+                            "kind": "numberTypeNode",
+                            "format": "i32",
+                            "endian": "le"
+                        }
+                    },
+                    {
+                        "kind": "instructionArgumentNode",
+                        "name": "binLiquidityDist",
+                        "docs": [
+                            "Liquidity distribution to each bins"
+                        ],
+                        "type": {
+                            "kind": "arrayTypeNode",
+                            "item": {
+                                "kind": "definedTypeLinkNode",
+                                "name": "binLiquidityDistributionByWeight"
+                            },
+                            "count": {
+                                "kind": "prefixedCountNode",
+                                "prefix": {
+                                    "kind": "numberTypeNode",
+                                    "format": "u32",
+                                    "endian": "le"
+                                }
+                            }
                         }
                     }
                 ],
@@ -2939,7 +3048,12 @@
                         "isWritable": false,
                         "isSigner": false,
                         "isOptional": false,
-                        "docs": []
+                        "docs": [],
+                        "defaultValue": {
+                            "kind": "publicKeyValueNode",
+                            "publicKey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                            "identifier": "splToken"
+                        }
                     },
                     {
                         "kind": "instructionAccountNode",
@@ -2979,11 +3093,49 @@
                     },
                     {
                         "kind": "instructionArgumentNode",
-                        "name": "liquidityParameter",
-                        "docs": [],
+                        "name": "amount",
+                        "docs": [
+                            "Amount of X token or Y token to deposit"
+                        ],
+                        "type": {
+                            "kind": "numberTypeNode",
+                            "format": "u64",
+                            "endian": "le"
+                        }
+                    },
+                    {
+                        "kind": "instructionArgumentNode",
+                        "name": "activeId",
+                        "docs": [
+                            "Active bin that integrator observe off-chain"
+                        ],
+                        "type": {
+                            "kind": "numberTypeNode",
+                            "format": "i32",
+                            "endian": "le"
+                        }
+                    },
+                    {
+                        "kind": "instructionArgumentNode",
+                        "name": "maxActiveBinSlippage",
+                        "docs": [
+                            "max active bin slippage allowed"
+                        ],
+                        "type": {
+                            "kind": "numberTypeNode",
+                            "format": "i32",
+                            "endian": "le"
+                        }
+                    },
+                    {
+                        "kind": "instructionArgumentNode",
+                        "name": "strategyParameters",
+                        "docs": [
+                            "strategy parameters"
+                        ],
                         "type": {
                             "kind": "definedTypeLinkNode",
-                            "name": "liquidityParameterByStrategyOneSide"
+                            "name": "strategyParameters"
                         }
                     }
                 ],
@@ -3079,7 +3231,12 @@
                         "isWritable": false,
                         "isSigner": false,
                         "isOptional": false,
-                        "docs": []
+                        "docs": [],
+                        "defaultValue": {
+                            "kind": "publicKeyValueNode",
+                            "publicKey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                            "identifier": "splToken"
+                        }
                     },
                     {
                         "kind": "instructionAccountNode",
@@ -3119,11 +3276,60 @@
                     },
                     {
                         "kind": "instructionArgumentNode",
-                        "name": "liquidityParameter",
-                        "docs": [],
+                        "name": "amount",
+                        "docs": [
+                            "Amount of X token or Y token to deposit"
+                        ],
                         "type": {
-                            "kind": "definedTypeLinkNode",
-                            "name": "liquidityOneSideParameter"
+                            "kind": "numberTypeNode",
+                            "format": "u64",
+                            "endian": "le"
+                        }
+                    },
+                    {
+                        "kind": "instructionArgumentNode",
+                        "name": "activeId",
+                        "docs": [
+                            "Active bin that integrator observe off-chain"
+                        ],
+                        "type": {
+                            "kind": "numberTypeNode",
+                            "format": "i32",
+                            "endian": "le"
+                        }
+                    },
+                    {
+                        "kind": "instructionArgumentNode",
+                        "name": "maxActiveBinSlippage",
+                        "docs": [
+                            "max active bin slippage allowed"
+                        ],
+                        "type": {
+                            "kind": "numberTypeNode",
+                            "format": "i32",
+                            "endian": "le"
+                        }
+                    },
+                    {
+                        "kind": "instructionArgumentNode",
+                        "name": "binLiquidityDist",
+                        "docs": [
+                            "Liquidity distribution to each bins"
+                        ],
+                        "type": {
+                            "kind": "arrayTypeNode",
+                            "item": {
+                                "kind": "definedTypeLinkNode",
+                                "name": "binLiquidityDistributionByWeight"
+                            },
+                            "count": {
+                                "kind": "prefixedCountNode",
+                                "prefix": {
+                                    "kind": "numberTypeNode",
+                                    "format": "u32",
+                                    "endian": "le"
+                                }
+                            }
                         }
                     }
                 ],
@@ -3330,7 +3536,10 @@
                         "isWritable": true,
                         "isSigner": true,
                         "isOptional": false,
-                        "docs": []
+                        "docs": [],
+                        "defaultValue": {
+                            "kind": "payerValueNode"
+                        }
                     },
                     {
                         "kind": "instructionAccountNode",
@@ -3362,7 +3571,12 @@
                         "isWritable": false,
                         "isSigner": false,
                         "isOptional": false,
-                        "docs": []
+                        "docs": [],
+                        "defaultValue": {
+                            "kind": "publicKeyValueNode",
+                            "publicKey": "11111111111111111111111111111111",
+                            "identifier": "splSystem"
+                        }
                     },
                     {
                         "kind": "instructionAccountNode",
@@ -3370,7 +3584,11 @@
                         "isWritable": false,
                         "isSigner": false,
                         "isOptional": false,
-                        "docs": []
+                        "docs": [],
+                        "defaultValue": {
+                            "kind": "publicKeyValueNode",
+                            "publicKey": "SysvarRent111111111111111111111111111111111"
+                        }
                     },
                     {
                         "kind": "instructionAccountNode",
@@ -3449,7 +3667,10 @@
                         "isWritable": true,
                         "isSigner": true,
                         "isOptional": false,
-                        "docs": []
+                        "docs": [],
+                        "defaultValue": {
+                            "kind": "payerValueNode"
+                        }
                     },
                     {
                         "kind": "instructionAccountNode",
@@ -3491,7 +3712,12 @@
                         "isWritable": false,
                         "isSigner": false,
                         "isOptional": false,
-                        "docs": []
+                        "docs": [],
+                        "defaultValue": {
+                            "kind": "publicKeyValueNode",
+                            "publicKey": "11111111111111111111111111111111",
+                            "identifier": "splSystem"
+                        }
                     },
                     {
                         "kind": "instructionAccountNode",
@@ -3499,7 +3725,11 @@
                         "isWritable": false,
                         "isSigner": false,
                         "isOptional": false,
-                        "docs": []
+                        "docs": [],
+                        "defaultValue": {
+                            "kind": "publicKeyValueNode",
+                            "publicKey": "SysvarRent111111111111111111111111111111111"
+                        }
                     },
                     {
                         "kind": "instructionAccountNode",
@@ -3578,7 +3808,10 @@
                         "isWritable": true,
                         "isSigner": true,
                         "isOptional": false,
-                        "docs": []
+                        "docs": [],
+                        "defaultValue": {
+                            "kind": "payerValueNode"
+                        }
                     },
                     {
                         "kind": "instructionAccountNode",
@@ -3644,7 +3877,12 @@
                         "isWritable": false,
                         "isSigner": false,
                         "isOptional": false,
-                        "docs": []
+                        "docs": [],
+                        "defaultValue": {
+                            "kind": "publicKeyValueNode",
+                            "publicKey": "11111111111111111111111111111111",
+                            "identifier": "splSystem"
+                        }
                     },
                     {
                         "kind": "instructionAccountNode",
@@ -4562,7 +4800,12 @@
                         "isWritable": false,
                         "isSigner": false,
                         "isOptional": false,
-                        "docs": []
+                        "docs": [],
+                        "defaultValue": {
+                            "kind": "publicKeyValueNode",
+                            "publicKey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                            "identifier": "splToken"
+                        }
                     },
                     {
                         "kind": "instructionAccountNode",
@@ -4570,7 +4813,12 @@
                         "isWritable": false,
                         "isSigner": false,
                         "isOptional": false,
-                        "docs": []
+                        "docs": [],
+                        "defaultValue": {
+                            "kind": "publicKeyValueNode",
+                            "publicKey": "11111111111111111111111111111111",
+                            "identifier": "splSystem"
+                        }
                     },
                     {
                         "kind": "instructionAccountNode",
@@ -4578,7 +4826,11 @@
                         "isWritable": false,
                         "isSigner": false,
                         "isOptional": false,
-                        "docs": []
+                        "docs": [],
+                        "defaultValue": {
+                            "kind": "publicKeyValueNode",
+                            "publicKey": "SysvarRent111111111111111111111111111111111"
+                        }
                     },
                     {
                         "kind": "instructionAccountNode",
@@ -4713,7 +4965,12 @@
                         "isWritable": false,
                         "isSigner": false,
                         "isOptional": false,
-                        "docs": []
+                        "docs": [],
+                        "defaultValue": {
+                            "kind": "publicKeyValueNode",
+                            "publicKey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                            "identifier": "splToken"
+                        }
                     },
                     {
                         "kind": "instructionAccountNode",
@@ -5058,7 +5315,12 @@
                         "isWritable": false,
                         "isSigner": false,
                         "isOptional": false,
-                        "docs": []
+                        "docs": [],
+                        "defaultValue": {
+                            "kind": "publicKeyValueNode",
+                            "publicKey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                            "identifier": "splToken"
+                        }
                     },
                     {
                         "kind": "instructionAccountNode",
@@ -5215,7 +5477,12 @@
                         "isWritable": false,
                         "isSigner": false,
                         "isOptional": false,
-                        "docs": []
+                        "docs": [],
+                        "defaultValue": {
+                            "kind": "publicKeyValueNode",
+                            "publicKey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                            "identifier": "splToken"
+                        }
                     },
                     {
                         "kind": "instructionAccountNode",
@@ -5421,11 +5688,38 @@
                     },
                     {
                         "kind": "instructionArgumentNode",
-                        "name": "feeParameter",
-                        "docs": [],
+                        "name": "protocolShare",
+                        "docs": [
+                            "Portion of swap fees retained by the protocol by controlling protocol_share parameter. protocol_swap_fee = protocol_share * total_swap_fee"
+                        ],
                         "type": {
-                            "kind": "definedTypeLinkNode",
-                            "name": "baseFeeParameter"
+                            "kind": "numberTypeNode",
+                            "format": "u16",
+                            "endian": "le"
+                        }
+                    },
+                    {
+                        "kind": "instructionArgumentNode",
+                        "name": "baseFactor",
+                        "docs": [
+                            "Base factor for base fee rate"
+                        ],
+                        "type": {
+                            "kind": "numberTypeNode",
+                            "format": "u16",
+                            "endian": "le"
+                        }
+                    },
+                    {
+                        "kind": "instructionArgumentNode",
+                        "name": "baseFeePowerFactor",
+                        "docs": [
+                            "Base fee power factor"
+                        ],
+                        "type": {
+                            "kind": "numberTypeNode",
+                            "format": "u8",
+                            "endian": "le"
                         }
                     }
                 ],
@@ -5497,11 +5791,62 @@
                     },
                     {
                         "kind": "instructionArgumentNode",
-                        "name": "feeParameter",
-                        "docs": [],
+                        "name": "filterPeriod",
+                        "docs": [
+                            "Filter period determine high frequency trading time window."
+                        ],
                         "type": {
-                            "kind": "definedTypeLinkNode",
-                            "name": "dynamicFeeParameter"
+                            "kind": "numberTypeNode",
+                            "format": "u16",
+                            "endian": "le"
+                        }
+                    },
+                    {
+                        "kind": "instructionArgumentNode",
+                        "name": "decayPeriod",
+                        "docs": [
+                            "Decay period determine when the volatile fee start decay / decrease."
+                        ],
+                        "type": {
+                            "kind": "numberTypeNode",
+                            "format": "u16",
+                            "endian": "le"
+                        }
+                    },
+                    {
+                        "kind": "instructionArgumentNode",
+                        "name": "reductionFactor",
+                        "docs": [
+                            "Reduction factor controls the volatile fee rate decrement rate."
+                        ],
+                        "type": {
+                            "kind": "numberTypeNode",
+                            "format": "u16",
+                            "endian": "le"
+                        }
+                    },
+                    {
+                        "kind": "instructionArgumentNode",
+                        "name": "variableFeeControl",
+                        "docs": [
+                            "Used to scale the variable fee component depending on the dynamic of the market"
+                        ],
+                        "type": {
+                            "kind": "numberTypeNode",
+                            "format": "u32",
+                            "endian": "le"
+                        }
+                    },
+                    {
+                        "kind": "instructionArgumentNode",
+                        "name": "maxVolatilityAccumulator",
+                        "docs": [
+                            "Maximum number of bin crossed can be accumulated. Used to cap volatile fee rate."
+                        ],
+                        "type": {
+                            "kind": "numberTypeNode",
+                            "format": "u32",
+                            "endian": "le"
                         }
                     }
                 ],
@@ -5541,7 +5886,12 @@
                         "isWritable": false,
                         "isSigner": false,
                         "isOptional": false,
-                        "docs": []
+                        "docs": [],
+                        "defaultValue": {
+                            "kind": "publicKeyValueNode",
+                            "publicKey": "11111111111111111111111111111111",
+                            "identifier": "splSystem"
+                        }
                     },
                     {
                         "kind": "instructionAccountNode",
@@ -5626,7 +5976,12 @@
                         "isWritable": false,
                         "isSigner": false,
                         "isOptional": false,
-                        "docs": []
+                        "docs": [],
+                        "defaultValue": {
+                            "kind": "publicKeyValueNode",
+                            "publicKey": "11111111111111111111111111111111",
+                            "identifier": "splSystem"
+                        }
                     },
                     {
                         "kind": "instructionAccountNode",
@@ -5634,7 +5989,11 @@
                         "isWritable": false,
                         "isSigner": false,
                         "isOptional": false,
-                        "docs": []
+                        "docs": [],
+                        "defaultValue": {
+                            "kind": "publicKeyValueNode",
+                            "publicKey": "SysvarRent111111111111111111111111111111111"
+                        }
                     }
                 ],
                 "arguments": [
@@ -5658,11 +6017,98 @@
                     },
                     {
                         "kind": "instructionArgumentNode",
-                        "name": "ix",
-                        "docs": [],
+                        "name": "binStep",
+                        "docs": [
+                            "Bin step. Represent the price increment / decrement."
+                        ],
                         "type": {
-                            "kind": "definedTypeLinkNode",
-                            "name": "initPresetParametersIx"
+                            "kind": "numberTypeNode",
+                            "format": "u16",
+                            "endian": "le"
+                        }
+                    },
+                    {
+                        "kind": "instructionArgumentNode",
+                        "name": "baseFactor",
+                        "docs": [
+                            "Used for base fee calculation. base_fee_rate = base_factor * bin_step * 10 * 10^base_fee_power_factor"
+                        ],
+                        "type": {
+                            "kind": "numberTypeNode",
+                            "format": "u16",
+                            "endian": "le"
+                        }
+                    },
+                    {
+                        "kind": "instructionArgumentNode",
+                        "name": "filterPeriod",
+                        "docs": [
+                            "Filter period determine high frequency trading time window."
+                        ],
+                        "type": {
+                            "kind": "numberTypeNode",
+                            "format": "u16",
+                            "endian": "le"
+                        }
+                    },
+                    {
+                        "kind": "instructionArgumentNode",
+                        "name": "decayPeriod",
+                        "docs": [
+                            "Decay period determine when the volatile fee start decay / decrease."
+                        ],
+                        "type": {
+                            "kind": "numberTypeNode",
+                            "format": "u16",
+                            "endian": "le"
+                        }
+                    },
+                    {
+                        "kind": "instructionArgumentNode",
+                        "name": "reductionFactor",
+                        "docs": [
+                            "Reduction factor controls the volatile fee rate decrement rate."
+                        ],
+                        "type": {
+                            "kind": "numberTypeNode",
+                            "format": "u16",
+                            "endian": "le"
+                        }
+                    },
+                    {
+                        "kind": "instructionArgumentNode",
+                        "name": "variableFeeControl",
+                        "docs": [
+                            "Used to scale the variable fee component depending on the dynamic of the market"
+                        ],
+                        "type": {
+                            "kind": "numberTypeNode",
+                            "format": "u32",
+                            "endian": "le"
+                        }
+                    },
+                    {
+                        "kind": "instructionArgumentNode",
+                        "name": "maxVolatilityAccumulator",
+                        "docs": [
+                            "Maximum number of bin crossed can be accumulated. Used to cap volatile fee rate."
+                        ],
+                        "type": {
+                            "kind": "numberTypeNode",
+                            "format": "u32",
+                            "endian": "le"
+                        }
+                    },
+                    {
+                        "kind": "instructionArgumentNode",
+                        "name": "protocolShare",
+                        "docs": [
+                            "Portion of swap fees retained by the protocol by controlling protocol_share parameter. protocol_swap_fee = protocol_share * total_swap_fee"
+                        ],
+                        "type": {
+                            "kind": "numberTypeNode",
+                            "format": "u16",
+                            "endian": "le"
                         }
                     }
                 ],
@@ -6076,7 +6522,12 @@
                         "isWritable": false,
                         "isSigner": false,
                         "isOptional": false,
-                        "docs": []
+                        "docs": [],
+                        "defaultValue": {
+                            "kind": "publicKeyValueNode",
+                            "publicKey": "11111111111111111111111111111111",
+                            "identifier": "splSystem"
+                        }
                     },
                     {
                         "kind": "instructionAccountNode",
@@ -6309,7 +6760,12 @@
                         "isWritable": false,
                         "isSigner": false,
                         "isOptional": false,
-                        "docs": []
+                        "docs": [],
+                        "defaultValue": {
+                            "kind": "publicKeyValueNode",
+                            "publicKey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                            "identifier": "splToken"
+                        }
                     },
                     {
                         "kind": "instructionAccountNode",
@@ -6721,7 +7177,12 @@
                         "isWritable": false,
                         "isSigner": false,
                         "isOptional": false,
-                        "docs": []
+                        "docs": [],
+                        "defaultValue": {
+                            "kind": "publicKeyValueNode",
+                            "publicKey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                            "identifier": "splToken"
+                        }
                     },
                     {
                         "kind": "instructionAccountNode",
@@ -6761,11 +7222,32 @@
                     },
                     {
                         "kind": "instructionArgumentNode",
-                        "name": "parameter",
+                        "name": "bins",
                         "docs": [],
                         "type": {
-                            "kind": "definedTypeLinkNode",
-                            "name": "addLiquiditySingleSidePreciseParameter"
+                            "kind": "arrayTypeNode",
+                            "item": {
+                                "kind": "definedTypeLinkNode",
+                                "name": "compressedBinDepositAmount"
+                            },
+                            "count": {
+                                "kind": "prefixedCountNode",
+                                "prefix": {
+                                    "kind": "numberTypeNode",
+                                    "format": "u32",
+                                    "endian": "le"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "kind": "instructionArgumentNode",
+                        "name": "decompressMultiplier",
+                        "docs": [],
+                        "type": {
+                            "kind": "numberTypeNode",
+                            "format": "u64",
+                            "endian": "le"
                         }
                     }
                 ],
@@ -7087,7 +7569,12 @@
                         "isWritable": false,
                         "isSigner": false,
                         "isOptional": false,
-                        "docs": []
+                        "docs": [],
+                        "defaultValue": {
+                            "kind": "publicKeyValueNode",
+                            "publicKey": "11111111111111111111111111111111",
+                            "identifier": "splSystem"
+                        }
                     }
                 ],
                 "arguments": [
@@ -7154,7 +7641,12 @@
                         "isWritable": false,
                         "isSigner": false,
                         "isOptional": false,
-                        "docs": []
+                        "docs": [],
+                        "defaultValue": {
+                            "kind": "publicKeyValueNode",
+                            "publicKey": "11111111111111111111111111111111",
+                            "identifier": "splSystem"
+                        }
                     }
                 ],
                 "arguments": [
@@ -7272,7 +7764,12 @@
                         "isWritable": false,
                         "isSigner": false,
                         "isOptional": false,
-                        "docs": []
+                        "docs": [],
+                        "defaultValue": {
+                            "kind": "publicKeyValueNode",
+                            "publicKey": "11111111111111111111111111111111",
+                            "identifier": "splSystem"
+                        }
                     }
                 ],
                 "arguments": [
@@ -7296,11 +7793,120 @@
                     },
                     {
                         "kind": "instructionArgumentNode",
-                        "name": "ix",
+                        "name": "index",
                         "docs": [],
                         "type": {
-                            "kind": "definedTypeLinkNode",
-                            "name": "initPresetParameters2Ix"
+                            "kind": "numberTypeNode",
+                            "format": "u16",
+                            "endian": "le"
+                        }
+                    },
+                    {
+                        "kind": "instructionArgumentNode",
+                        "name": "binStep",
+                        "docs": [
+                            "Bin step. Represent the price increment / decrement."
+                        ],
+                        "type": {
+                            "kind": "numberTypeNode",
+                            "format": "u16",
+                            "endian": "le"
+                        }
+                    },
+                    {
+                        "kind": "instructionArgumentNode",
+                        "name": "baseFactor",
+                        "docs": [
+                            "Used for base fee calculation. base_fee_rate = base_factor * bin_step * 10 * 10^base_fee_power_factor"
+                        ],
+                        "type": {
+                            "kind": "numberTypeNode",
+                            "format": "u16",
+                            "endian": "le"
+                        }
+                    },
+                    {
+                        "kind": "instructionArgumentNode",
+                        "name": "filterPeriod",
+                        "docs": [
+                            "Filter period determine high frequency trading time window."
+                        ],
+                        "type": {
+                            "kind": "numberTypeNode",
+                            "format": "u16",
+                            "endian": "le"
+                        }
+                    },
+                    {
+                        "kind": "instructionArgumentNode",
+                        "name": "decayPeriod",
+                        "docs": [
+                            "Decay period determine when the volatile fee start decay / decrease."
+                        ],
+                        "type": {
+                            "kind": "numberTypeNode",
+                            "format": "u16",
+                            "endian": "le"
+                        }
+                    },
+                    {
+                        "kind": "instructionArgumentNode",
+                        "name": "reductionFactor",
+                        "docs": [
+                            "Reduction factor controls the volatile fee rate decrement rate."
+                        ],
+                        "type": {
+                            "kind": "numberTypeNode",
+                            "format": "u16",
+                            "endian": "le"
+                        }
+                    },
+                    {
+                        "kind": "instructionArgumentNode",
+                        "name": "variableFeeControl",
+                        "docs": [
+                            "Used to scale the variable fee component depending on the dynamic of the market"
+                        ],
+                        "type": {
+                            "kind": "numberTypeNode",
+                            "format": "u32",
+                            "endian": "le"
+                        }
+                    },
+                    {
+                        "kind": "instructionArgumentNode",
+                        "name": "maxVolatilityAccumulator",
+                        "docs": [
+                            "Maximum number of bin crossed can be accumulated. Used to cap volatile fee rate."
+                        ],
+                        "type": {
+                            "kind": "numberTypeNode",
+                            "format": "u32",
+                            "endian": "le"
+                        }
+                    },
+                    {
+                        "kind": "instructionArgumentNode",
+                        "name": "protocolShare",
+                        "docs": [
+                            "Portion of swap fees retained by the protocol by controlling protocol_share parameter. protocol_swap_fee = protocol_share * total_swap_fee"
+                        ],
+                        "type": {
+                            "kind": "numberTypeNode",
+                            "format": "u16",
+                            "endian": "le"
+                        }
+                    },
+                    {
+                        "kind": "instructionArgumentNode",
+                        "name": "baseFeePowerFactor",
+                        "docs": [
+                            "Base fee power factor"
+                        ],
+                        "type": {
+                            "kind": "numberTypeNode",
+                            "format": "u8",
+                            "endian": "le"
                         }
                     }
                 ],
@@ -7428,7 +8034,12 @@
                         "isWritable": false,
                         "isSigner": false,
                         "isOptional": false,
-                        "docs": []
+                        "docs": [],
+                        "defaultValue": {
+                            "kind": "publicKeyValueNode",
+                            "publicKey": "11111111111111111111111111111111",
+                            "identifier": "splSystem"
+                        }
                     },
                     {
                         "kind": "instructionAccountNode",
@@ -7468,11 +8079,28 @@
                     },
                     {
                         "kind": "instructionArgumentNode",
-                        "name": "params",
-                        "docs": [],
+                        "name": "activeId",
+                        "docs": [
+                            "Pool price"
+                        ],
                         "type": {
-                            "kind": "definedTypeLinkNode",
-                            "name": "initializeLbPair2Params"
+                            "kind": "numberTypeNode",
+                            "format": "i32",
+                            "endian": "le"
+                        }
+                    },
+                    {
+                        "kind": "instructionArgumentNode",
+                        "name": "padding",
+                        "docs": [
+                            "Padding, for future use"
+                        ],
+                        "type": {
+                            "kind": "fixedSizeTypeNode",
+                            "size": 96,
+                            "type": {
+                                "kind": "bytesTypeNode"
+                            }
                         }
                     }
                 ],
@@ -7600,7 +8228,12 @@
                         "isWritable": false,
                         "isSigner": false,
                         "isOptional": false,
-                        "docs": []
+                        "docs": [],
+                        "defaultValue": {
+                            "kind": "publicKeyValueNode",
+                            "publicKey": "11111111111111111111111111111111",
+                            "identifier": "splSystem"
+                        }
                     },
                     {
                         "kind": "instructionAccountNode",
@@ -7900,7 +8533,12 @@
                         "isWritable": false,
                         "isSigner": false,
                         "isOptional": false,
-                        "docs": []
+                        "docs": [],
+                        "defaultValue": {
+                            "kind": "publicKeyValueNode",
+                            "publicKey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                            "identifier": "splToken"
+                        }
                     },
                     {
                         "kind": "instructionAccountNode",
@@ -8392,7 +9030,12 @@
                         "isWritable": false,
                         "isSigner": false,
                         "isOptional": false,
-                        "docs": []
+                        "docs": [],
+                        "defaultValue": {
+                            "kind": "publicKeyValueNode",
+                            "publicKey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                            "identifier": "splToken"
+                        }
                     },
                     {
                         "kind": "instructionAccountNode",
@@ -8432,11 +9075,42 @@
                     },
                     {
                         "kind": "instructionArgumentNode",
-                        "name": "liquidityParameter",
+                        "name": "bins",
                         "docs": [],
                         "type": {
-                            "kind": "definedTypeLinkNode",
-                            "name": "addLiquiditySingleSidePreciseParameter2"
+                            "kind": "arrayTypeNode",
+                            "item": {
+                                "kind": "definedTypeLinkNode",
+                                "name": "compressedBinDepositAmount"
+                            },
+                            "count": {
+                                "kind": "prefixedCountNode",
+                                "prefix": {
+                                    "kind": "numberTypeNode",
+                                    "format": "u32",
+                                    "endian": "le"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "kind": "instructionArgumentNode",
+                        "name": "decompressMultiplier",
+                        "docs": [],
+                        "type": {
+                            "kind": "numberTypeNode",
+                            "format": "u64",
+                            "endian": "le"
+                        }
+                    },
+                    {
+                        "kind": "instructionArgumentNode",
+                        "name": "maxAmount",
+                        "docs": [],
+                        "type": {
+                            "kind": "numberTypeNode",
+                            "format": "u64",
+                            "endian": "le"
                         }
                     },
                     {
@@ -9663,413 +10337,6 @@
         "definedTypes": [
             {
                 "kind": "definedTypeNode",
-                "name": "initPresetParameters2Ix",
-                "docs": [],
-                "type": {
-                    "kind": "structTypeNode",
-                    "fields": [
-                        {
-                            "kind": "structFieldTypeNode",
-                            "name": "index",
-                            "docs": [],
-                            "type": {
-                                "kind": "numberTypeNode",
-                                "format": "u16",
-                                "endian": "le"
-                            }
-                        },
-                        {
-                            "kind": "structFieldTypeNode",
-                            "name": "binStep",
-                            "docs": [
-                                "Bin step. Represent the price increment / decrement."
-                            ],
-                            "type": {
-                                "kind": "numberTypeNode",
-                                "format": "u16",
-                                "endian": "le"
-                            }
-                        },
-                        {
-                            "kind": "structFieldTypeNode",
-                            "name": "baseFactor",
-                            "docs": [
-                                "Used for base fee calculation. base_fee_rate = base_factor * bin_step * 10 * 10^base_fee_power_factor"
-                            ],
-                            "type": {
-                                "kind": "numberTypeNode",
-                                "format": "u16",
-                                "endian": "le"
-                            }
-                        },
-                        {
-                            "kind": "structFieldTypeNode",
-                            "name": "filterPeriod",
-                            "docs": [
-                                "Filter period determine high frequency trading time window."
-                            ],
-                            "type": {
-                                "kind": "numberTypeNode",
-                                "format": "u16",
-                                "endian": "le"
-                            }
-                        },
-                        {
-                            "kind": "structFieldTypeNode",
-                            "name": "decayPeriod",
-                            "docs": [
-                                "Decay period determine when the volatile fee start decay / decrease."
-                            ],
-                            "type": {
-                                "kind": "numberTypeNode",
-                                "format": "u16",
-                                "endian": "le"
-                            }
-                        },
-                        {
-                            "kind": "structFieldTypeNode",
-                            "name": "reductionFactor",
-                            "docs": [
-                                "Reduction factor controls the volatile fee rate decrement rate."
-                            ],
-                            "type": {
-                                "kind": "numberTypeNode",
-                                "format": "u16",
-                                "endian": "le"
-                            }
-                        },
-                        {
-                            "kind": "structFieldTypeNode",
-                            "name": "variableFeeControl",
-                            "docs": [
-                                "Used to scale the variable fee component depending on the dynamic of the market"
-                            ],
-                            "type": {
-                                "kind": "numberTypeNode",
-                                "format": "u32",
-                                "endian": "le"
-                            }
-                        },
-                        {
-                            "kind": "structFieldTypeNode",
-                            "name": "maxVolatilityAccumulator",
-                            "docs": [
-                                "Maximum number of bin crossed can be accumulated. Used to cap volatile fee rate."
-                            ],
-                            "type": {
-                                "kind": "numberTypeNode",
-                                "format": "u32",
-                                "endian": "le"
-                            }
-                        },
-                        {
-                            "kind": "structFieldTypeNode",
-                            "name": "protocolShare",
-                            "docs": [
-                                "Portion of swap fees retained by the protocol by controlling protocol_share parameter. protocol_swap_fee = protocol_share * total_swap_fee"
-                            ],
-                            "type": {
-                                "kind": "numberTypeNode",
-                                "format": "u16",
-                                "endian": "le"
-                            }
-                        },
-                        {
-                            "kind": "structFieldTypeNode",
-                            "name": "baseFeePowerFactor",
-                            "docs": [
-                                "Base fee power factor"
-                            ],
-                            "type": {
-                                "kind": "numberTypeNode",
-                                "format": "u8",
-                                "endian": "le"
-                            }
-                        }
-                    ]
-                }
-            },
-            {
-                "kind": "definedTypeNode",
-                "name": "initPresetParametersIx",
-                "docs": [],
-                "type": {
-                    "kind": "structTypeNode",
-                    "fields": [
-                        {
-                            "kind": "structFieldTypeNode",
-                            "name": "binStep",
-                            "docs": [
-                                "Bin step. Represent the price increment / decrement."
-                            ],
-                            "type": {
-                                "kind": "numberTypeNode",
-                                "format": "u16",
-                                "endian": "le"
-                            }
-                        },
-                        {
-                            "kind": "structFieldTypeNode",
-                            "name": "baseFactor",
-                            "docs": [
-                                "Used for base fee calculation. base_fee_rate = base_factor * bin_step * 10 * 10^base_fee_power_factor"
-                            ],
-                            "type": {
-                                "kind": "numberTypeNode",
-                                "format": "u16",
-                                "endian": "le"
-                            }
-                        },
-                        {
-                            "kind": "structFieldTypeNode",
-                            "name": "filterPeriod",
-                            "docs": [
-                                "Filter period determine high frequency trading time window."
-                            ],
-                            "type": {
-                                "kind": "numberTypeNode",
-                                "format": "u16",
-                                "endian": "le"
-                            }
-                        },
-                        {
-                            "kind": "structFieldTypeNode",
-                            "name": "decayPeriod",
-                            "docs": [
-                                "Decay period determine when the volatile fee start decay / decrease."
-                            ],
-                            "type": {
-                                "kind": "numberTypeNode",
-                                "format": "u16",
-                                "endian": "le"
-                            }
-                        },
-                        {
-                            "kind": "structFieldTypeNode",
-                            "name": "reductionFactor",
-                            "docs": [
-                                "Reduction factor controls the volatile fee rate decrement rate."
-                            ],
-                            "type": {
-                                "kind": "numberTypeNode",
-                                "format": "u16",
-                                "endian": "le"
-                            }
-                        },
-                        {
-                            "kind": "structFieldTypeNode",
-                            "name": "variableFeeControl",
-                            "docs": [
-                                "Used to scale the variable fee component depending on the dynamic of the market"
-                            ],
-                            "type": {
-                                "kind": "numberTypeNode",
-                                "format": "u32",
-                                "endian": "le"
-                            }
-                        },
-                        {
-                            "kind": "structFieldTypeNode",
-                            "name": "maxVolatilityAccumulator",
-                            "docs": [
-                                "Maximum number of bin crossed can be accumulated. Used to cap volatile fee rate."
-                            ],
-                            "type": {
-                                "kind": "numberTypeNode",
-                                "format": "u32",
-                                "endian": "le"
-                            }
-                        },
-                        {
-                            "kind": "structFieldTypeNode",
-                            "name": "protocolShare",
-                            "docs": [
-                                "Portion of swap fees retained by the protocol by controlling protocol_share parameter. protocol_swap_fee = protocol_share * total_swap_fee"
-                            ],
-                            "type": {
-                                "kind": "numberTypeNode",
-                                "format": "u16",
-                                "endian": "le"
-                            }
-                        }
-                    ]
-                }
-            },
-            {
-                "kind": "definedTypeNode",
-                "name": "baseFeeParameter",
-                "docs": [],
-                "type": {
-                    "kind": "structTypeNode",
-                    "fields": [
-                        {
-                            "kind": "structFieldTypeNode",
-                            "name": "protocolShare",
-                            "docs": [
-                                "Portion of swap fees retained by the protocol by controlling protocol_share parameter. protocol_swap_fee = protocol_share * total_swap_fee"
-                            ],
-                            "type": {
-                                "kind": "numberTypeNode",
-                                "format": "u16",
-                                "endian": "le"
-                            }
-                        },
-                        {
-                            "kind": "structFieldTypeNode",
-                            "name": "baseFactor",
-                            "docs": [
-                                "Base factor for base fee rate"
-                            ],
-                            "type": {
-                                "kind": "numberTypeNode",
-                                "format": "u16",
-                                "endian": "le"
-                            }
-                        },
-                        {
-                            "kind": "structFieldTypeNode",
-                            "name": "baseFeePowerFactor",
-                            "docs": [
-                                "Base fee power factor"
-                            ],
-                            "type": {
-                                "kind": "numberTypeNode",
-                                "format": "u8",
-                                "endian": "le"
-                            }
-                        }
-                    ]
-                }
-            },
-            {
-                "kind": "definedTypeNode",
-                "name": "dynamicFeeParameter",
-                "docs": [],
-                "type": {
-                    "kind": "structTypeNode",
-                    "fields": [
-                        {
-                            "kind": "structFieldTypeNode",
-                            "name": "filterPeriod",
-                            "docs": [
-                                "Filter period determine high frequency trading time window."
-                            ],
-                            "type": {
-                                "kind": "numberTypeNode",
-                                "format": "u16",
-                                "endian": "le"
-                            }
-                        },
-                        {
-                            "kind": "structFieldTypeNode",
-                            "name": "decayPeriod",
-                            "docs": [
-                                "Decay period determine when the volatile fee start decay / decrease."
-                            ],
-                            "type": {
-                                "kind": "numberTypeNode",
-                                "format": "u16",
-                                "endian": "le"
-                            }
-                        },
-                        {
-                            "kind": "structFieldTypeNode",
-                            "name": "reductionFactor",
-                            "docs": [
-                                "Reduction factor controls the volatile fee rate decrement rate."
-                            ],
-                            "type": {
-                                "kind": "numberTypeNode",
-                                "format": "u16",
-                                "endian": "le"
-                            }
-                        },
-                        {
-                            "kind": "structFieldTypeNode",
-                            "name": "variableFeeControl",
-                            "docs": [
-                                "Used to scale the variable fee component depending on the dynamic of the market"
-                            ],
-                            "type": {
-                                "kind": "numberTypeNode",
-                                "format": "u32",
-                                "endian": "le"
-                            }
-                        },
-                        {
-                            "kind": "structFieldTypeNode",
-                            "name": "maxVolatilityAccumulator",
-                            "docs": [
-                                "Maximum number of bin crossed can be accumulated. Used to cap volatile fee rate."
-                            ],
-                            "type": {
-                                "kind": "numberTypeNode",
-                                "format": "u32",
-                                "endian": "le"
-                            }
-                        }
-                    ]
-                }
-            },
-            {
-                "kind": "definedTypeNode",
-                "name": "liquidityParameterByStrategyOneSide",
-                "docs": [],
-                "type": {
-                    "kind": "structTypeNode",
-                    "fields": [
-                        {
-                            "kind": "structFieldTypeNode",
-                            "name": "amount",
-                            "docs": [
-                                "Amount of X token or Y token to deposit"
-                            ],
-                            "type": {
-                                "kind": "numberTypeNode",
-                                "format": "u64",
-                                "endian": "le"
-                            }
-                        },
-                        {
-                            "kind": "structFieldTypeNode",
-                            "name": "activeId",
-                            "docs": [
-                                "Active bin that integrator observe off-chain"
-                            ],
-                            "type": {
-                                "kind": "numberTypeNode",
-                                "format": "i32",
-                                "endian": "le"
-                            }
-                        },
-                        {
-                            "kind": "structFieldTypeNode",
-                            "name": "maxActiveBinSlippage",
-                            "docs": [
-                                "max active bin slippage allowed"
-                            ],
-                            "type": {
-                                "kind": "numberTypeNode",
-                                "format": "i32",
-                                "endian": "le"
-                            }
-                        },
-                        {
-                            "kind": "structFieldTypeNode",
-                            "name": "strategyParameters",
-                            "docs": [
-                                "strategy parameters"
-                            ],
-                            "type": {
-                                "kind": "definedTypeLinkNode",
-                                "name": "strategyParameters"
-                            }
-                        }
-                    ]
-                }
-            },
-            {
-                "kind": "definedTypeNode",
                 "name": "liquidityParameterByStrategy",
                 "docs": [],
                 "type": {
@@ -10186,83 +10453,10 @@
                                 "parameters"
                             ],
                             "type": {
-                                "kind": "arrayTypeNode",
-                                "item": {
-                                    "kind": "numberTypeNode",
-                                    "format": "u8",
-                                    "endian": "le"
-                                },
-                                "count": {
-                                    "kind": "fixedCountNode",
-                                    "value": 64
-                                }
-                            }
-                        }
-                    ]
-                }
-            },
-            {
-                "kind": "definedTypeNode",
-                "name": "liquidityOneSideParameter",
-                "docs": [],
-                "type": {
-                    "kind": "structTypeNode",
-                    "fields": [
-                        {
-                            "kind": "structFieldTypeNode",
-                            "name": "amount",
-                            "docs": [
-                                "Amount of X token or Y token to deposit"
-                            ],
-                            "type": {
-                                "kind": "numberTypeNode",
-                                "format": "u64",
-                                "endian": "le"
-                            }
-                        },
-                        {
-                            "kind": "structFieldTypeNode",
-                            "name": "activeId",
-                            "docs": [
-                                "Active bin that integrator observe off-chain"
-                            ],
-                            "type": {
-                                "kind": "numberTypeNode",
-                                "format": "i32",
-                                "endian": "le"
-                            }
-                        },
-                        {
-                            "kind": "structFieldTypeNode",
-                            "name": "maxActiveBinSlippage",
-                            "docs": [
-                                "max active bin slippage allowed"
-                            ],
-                            "type": {
-                                "kind": "numberTypeNode",
-                                "format": "i32",
-                                "endian": "le"
-                            }
-                        },
-                        {
-                            "kind": "structFieldTypeNode",
-                            "name": "binLiquidityDist",
-                            "docs": [
-                                "Liquidity distribution to each bins"
-                            ],
-                            "type": {
-                                "kind": "arrayTypeNode",
-                                "item": {
-                                    "kind": "definedTypeLinkNode",
-                                    "name": "binLiquidityDistributionByWeight"
-                                },
-                                "count": {
-                                    "kind": "prefixedCountNode",
-                                    "prefix": {
-                                        "kind": "numberTypeNode",
-                                        "format": "u32",
-                                        "endian": "le"
-                                    }
+                                "kind": "fixedSizeTypeNode",
+                                "size": 64,
+                                "type": {
+                                    "kind": "bytesTypeNode"
                                 }
                             }
                         }
@@ -10297,126 +10491,6 @@
                             "type": {
                                 "kind": "numberTypeNode",
                                 "format": "u16",
-                                "endian": "le"
-                            }
-                        }
-                    ]
-                }
-            },
-            {
-                "kind": "definedTypeNode",
-                "name": "liquidityParameterByWeight",
-                "docs": [],
-                "type": {
-                    "kind": "structTypeNode",
-                    "fields": [
-                        {
-                            "kind": "structFieldTypeNode",
-                            "name": "amountX",
-                            "docs": [
-                                "Amount of X token to deposit"
-                            ],
-                            "type": {
-                                "kind": "numberTypeNode",
-                                "format": "u64",
-                                "endian": "le"
-                            }
-                        },
-                        {
-                            "kind": "structFieldTypeNode",
-                            "name": "amountY",
-                            "docs": [
-                                "Amount of Y token to deposit"
-                            ],
-                            "type": {
-                                "kind": "numberTypeNode",
-                                "format": "u64",
-                                "endian": "le"
-                            }
-                        },
-                        {
-                            "kind": "structFieldTypeNode",
-                            "name": "activeId",
-                            "docs": [
-                                "Active bin that integrator observe off-chain"
-                            ],
-                            "type": {
-                                "kind": "numberTypeNode",
-                                "format": "i32",
-                                "endian": "le"
-                            }
-                        },
-                        {
-                            "kind": "structFieldTypeNode",
-                            "name": "maxActiveBinSlippage",
-                            "docs": [
-                                "max active bin slippage allowed"
-                            ],
-                            "type": {
-                                "kind": "numberTypeNode",
-                                "format": "i32",
-                                "endian": "le"
-                            }
-                        },
-                        {
-                            "kind": "structFieldTypeNode",
-                            "name": "binLiquidityDist",
-                            "docs": [
-                                "Liquidity distribution to each bins"
-                            ],
-                            "type": {
-                                "kind": "arrayTypeNode",
-                                "item": {
-                                    "kind": "definedTypeLinkNode",
-                                    "name": "binLiquidityDistributionByWeight"
-                                },
-                                "count": {
-                                    "kind": "prefixedCountNode",
-                                    "prefix": {
-                                        "kind": "numberTypeNode",
-                                        "format": "u32",
-                                        "endian": "le"
-                                    }
-                                }
-                            }
-                        }
-                    ]
-                }
-            },
-            {
-                "kind": "definedTypeNode",
-                "name": "addLiquiditySingleSidePreciseParameter",
-                "docs": [],
-                "type": {
-                    "kind": "structTypeNode",
-                    "fields": [
-                        {
-                            "kind": "structFieldTypeNode",
-                            "name": "bins",
-                            "docs": [],
-                            "type": {
-                                "kind": "arrayTypeNode",
-                                "item": {
-                                    "kind": "definedTypeLinkNode",
-                                    "name": "compressedBinDepositAmount"
-                                },
-                                "count": {
-                                    "kind": "prefixedCountNode",
-                                    "prefix": {
-                                        "kind": "numberTypeNode",
-                                        "format": "u32",
-                                        "endian": "le"
-                                    }
-                                }
-                            }
-                        },
-                        {
-                            "kind": "structFieldTypeNode",
-                            "name": "decompressMultiplier",
-                            "docs": [],
-                            "type": {
-                                "kind": "numberTypeNode",
-                                "format": "u64",
                                 "endian": "le"
                             }
                         }
@@ -10680,136 +10754,11 @@
                                 "Padding, for future use"
                             ],
                             "type": {
-                                "kind": "arrayTypeNode",
-                                "item": {
-                                    "kind": "numberTypeNode",
-                                    "format": "u8",
-                                    "endian": "le"
-                                },
-                                "count": {
-                                    "kind": "fixedCountNode",
-                                    "value": 62
+                                "kind": "fixedSizeTypeNode",
+                                "size": 62,
+                                "type": {
+                                    "kind": "bytesTypeNode"
                                 }
-                            }
-                        }
-                    ]
-                }
-            },
-            {
-                "kind": "definedTypeNode",
-                "name": "initPermissionPairIx",
-                "docs": [],
-                "type": {
-                    "kind": "structTypeNode",
-                    "fields": [
-                        {
-                            "kind": "structFieldTypeNode",
-                            "name": "activeId",
-                            "docs": [],
-                            "type": {
-                                "kind": "numberTypeNode",
-                                "format": "i32",
-                                "endian": "le"
-                            }
-                        },
-                        {
-                            "kind": "structFieldTypeNode",
-                            "name": "binStep",
-                            "docs": [],
-                            "type": {
-                                "kind": "numberTypeNode",
-                                "format": "u16",
-                                "endian": "le"
-                            }
-                        },
-                        {
-                            "kind": "structFieldTypeNode",
-                            "name": "baseFactor",
-                            "docs": [],
-                            "type": {
-                                "kind": "numberTypeNode",
-                                "format": "u16",
-                                "endian": "le"
-                            }
-                        },
-                        {
-                            "kind": "structFieldTypeNode",
-                            "name": "baseFeePowerFactor",
-                            "docs": [],
-                            "type": {
-                                "kind": "numberTypeNode",
-                                "format": "u8",
-                                "endian": "le"
-                            }
-                        },
-                        {
-                            "kind": "structFieldTypeNode",
-                            "name": "activationType",
-                            "docs": [],
-                            "type": {
-                                "kind": "numberTypeNode",
-                                "format": "u8",
-                                "endian": "le"
-                            }
-                        },
-                        {
-                            "kind": "structFieldTypeNode",
-                            "name": "protocolShare",
-                            "docs": [],
-                            "type": {
-                                "kind": "numberTypeNode",
-                                "format": "u16",
-                                "endian": "le"
-                            }
-                        }
-                    ]
-                }
-            },
-            {
-                "kind": "definedTypeNode",
-                "name": "addLiquiditySingleSidePreciseParameter2",
-                "docs": [],
-                "type": {
-                    "kind": "structTypeNode",
-                    "fields": [
-                        {
-                            "kind": "structFieldTypeNode",
-                            "name": "bins",
-                            "docs": [],
-                            "type": {
-                                "kind": "arrayTypeNode",
-                                "item": {
-                                    "kind": "definedTypeLinkNode",
-                                    "name": "compressedBinDepositAmount"
-                                },
-                                "count": {
-                                    "kind": "prefixedCountNode",
-                                    "prefix": {
-                                        "kind": "numberTypeNode",
-                                        "format": "u32",
-                                        "endian": "le"
-                                    }
-                                }
-                            }
-                        },
-                        {
-                            "kind": "structFieldTypeNode",
-                            "name": "decompressMultiplier",
-                            "docs": [],
-                            "type": {
-                                "kind": "numberTypeNode",
-                                "format": "u64",
-                                "endian": "le"
-                            }
-                        },
-                        {
-                            "kind": "structFieldTypeNode",
-                            "name": "maxAmount",
-                            "docs": [],
-                            "type": {
-                                "kind": "numberTypeNode",
-                                "format": "u64",
-                                "endian": "le"
                             }
                         }
                     ]
@@ -10840,47 +10789,6 @@
                                 "kind": "numberTypeNode",
                                 "format": "u32",
                                 "endian": "le"
-                            }
-                        }
-                    ]
-                }
-            },
-            {
-                "kind": "definedTypeNode",
-                "name": "initializeLbPair2Params",
-                "docs": [],
-                "type": {
-                    "kind": "structTypeNode",
-                    "fields": [
-                        {
-                            "kind": "structFieldTypeNode",
-                            "name": "activeId",
-                            "docs": [
-                                "Pool price"
-                            ],
-                            "type": {
-                                "kind": "numberTypeNode",
-                                "format": "i32",
-                                "endian": "le"
-                            }
-                        },
-                        {
-                            "kind": "structFieldTypeNode",
-                            "name": "padding",
-                            "docs": [
-                                "Padding, for future use"
-                            ],
-                            "type": {
-                                "kind": "arrayTypeNode",
-                                "item": {
-                                    "kind": "numberTypeNode",
-                                    "format": "u8",
-                                    "endian": "le"
-                                },
-                                "count": {
-                                    "kind": "fixedCountNode",
-                                    "value": 96
-                                }
                             }
                         }
                     ]
@@ -11355,15 +11263,10 @@
                                 "Padding for bytemuck safe alignment"
                             ],
                             "type": {
-                                "kind": "arrayTypeNode",
-                                "item": {
-                                    "kind": "numberTypeNode",
-                                    "format": "u8",
-                                    "endian": "le"
-                                },
-                                "count": {
-                                    "kind": "fixedCountNode",
-                                    "value": 5
+                                "kind": "fixedSizeTypeNode",
+                                "size": 5,
+                                "type": {
+                                    "kind": "bytesTypeNode"
                                 }
                             }
                         }
@@ -11423,15 +11326,10 @@
                                 "Padding for bytemuck safe alignment"
                             ],
                             "type": {
-                                "kind": "arrayTypeNode",
-                                "item": {
-                                    "kind": "numberTypeNode",
-                                    "format": "u8",
-                                    "endian": "le"
-                                },
-                                "count": {
-                                    "kind": "fixedCountNode",
-                                    "value": 4
+                                "kind": "fixedSizeTypeNode",
+                                "size": 4,
+                                "type": {
+                                    "kind": "bytesTypeNode"
                                 }
                             }
                         },
@@ -11454,15 +11352,10 @@
                                 "Padding for bytemuck safe alignment"
                             ],
                             "type": {
-                                "kind": "arrayTypeNode",
-                                "item": {
-                                    "kind": "numberTypeNode",
-                                    "format": "u8",
-                                    "endian": "le"
-                                },
-                                "count": {
-                                    "kind": "fixedCountNode",
-                                    "value": 8
+                                "kind": "fixedSizeTypeNode",
+                                "size": 8,
+                                "type": {
+                                    "kind": "bytesTypeNode"
                                 }
                             }
                         }

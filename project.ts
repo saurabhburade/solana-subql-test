@@ -54,7 +54,7 @@ const project: SolanaProject = {
             kind: SolanaHandlerKind.Instruction,
             handler: "handleLiquidity",
             filter: {
-              discriminator: "AddLiquidityOneSide",
+              discriminator: "addLiquidityOneSide",
               programId: "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo",
             },
           },
