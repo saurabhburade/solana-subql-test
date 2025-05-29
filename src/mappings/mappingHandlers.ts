@@ -36,19 +36,7 @@ export function getAccountByIndex(
 export async function handleLiquidity(
   instruction: AddLiquidityOneSideInstruction
 ) {
-  const decoded = await instruction.decodedData;
-  if (decoded) {
-    const accounts = instruction.accounts.map((account) => account.toString());
-    logger.info("handleLiquidity : programAddress : {}", [decoded.name]);
-    const newLiq = AddLiquidity.create({
-      id: `${instruction.transaction.transaction.signatures[0]}-${instruction.index.join(".")}`,
-      accounts: JSON.stringify(accounts),
-      blockNumber: instruction.block.blockHeight,
-      data: JSON.stringify(decoded?.data.liquidityParameter),
-      program: decoded.name,
-      transactionHash: instruction.transaction.transaction.signatures[0],
-    });
-
-    await newLiq.save();
-  }
+  logger.info("handleLiquidity : programAddress : {}", [
+    instruction.transaction.transaction.message.accountKeys[0].toString(),
+  ]);
 }

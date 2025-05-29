@@ -39,7 +39,7 @@ const project: SolanaProject = {
   dataSources: [
     {
       kind: SolanaDatasourceKind.Runtime,
-      startBlock: 336382792,
+      startBlock: 343212732,
 
       assets: new Map([
         [
