@@ -36,7 +36,7 @@ export function getAccountByIndex(
 export async function handleLiquidity(
   instruction: AddLiquidityOneSideInstruction
 ) {
-  logger.info("handleLiquidity : programAddress : {}", [
-    instruction.transaction.transaction.message.accountKeys[0].toString(),
+  logger.info("handleLiquidity : block number : {}", [
+    instruction.block.blockHeight,
   ]);
 }
